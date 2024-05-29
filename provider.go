@@ -19,12 +19,14 @@ func Provider() *schema.Provider {
 	provider := &schema.Provider{
 		Schema: map[string]*schema.Schema{
 			"credentials": {
-				Type:     schema.TypeString,
-				Required: true,
+				Type:        schema.TypeString,
+				Description: "Path to the credentials file.",
+				Required:    true,
 			},
 			"token": {
-				Type:     schema.TypeString,
-				Required: true,
+				Type:        schema.TypeString,
+				Description: "Path to the token file.",
+				Required:    true,
 			},
 		},
 		ResourcesMap: map[string]*schema.Resource{
