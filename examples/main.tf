@@ -26,7 +26,7 @@ resource "google-calendar_event" "demo" {
   // Each attendee is listed separately, and attendees can be marked as
   // optional.
   attendee {
-    email = "will@williamcohen.com"
+    email = "will@example.com"
   }
 
   // By default, the user's calendar reminders are used. By setting any
